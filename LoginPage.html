@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <main>
+      <section class="container-lg">
+        <div class="flex flex-row rounded-lg">
+          <div class="hidden sm:flex sm:h-[707px] sm:basis-11/12">
+            <img
+              src="/asset/backgroundLoginPage.png"
+              alt="backgroundLoginPage"
+              width="900"
+            />
+            <div class="absolute bottom-0 left-0 pl-2">
+              <p class="text-white">
+                Photo by <span class="underline">Alexandr Popadin</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="sm:basis-2/4 grid place-content-center basis-[34rem] h-[606px] sm:h-[707px]"
+          >
+            <div class="flex flex-col gap-12 w-80">
+              <div class="hidden sm:flex">
+                <img
+                  src="/asset/logoPractice.png"
+                  alt="logoPractice"
+                  width="170"
+                />
+              </div>
+              <div>
+                <form action="">
+                  <h1 class="font-semibold text-lg">Nice to see you again</h1>
+                  <div class="pb-2 pt-3">
+                    <label for="email" class="text-xs pl-3">Login</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email or phone number"
+                      class="w-80 h-10 rounded-lg p-2.5 text-sm border border-gray-100 bg-gray-100 focus:border-gray-300 focus:ring-gray-300 active:ring-gray-300"
+                    />
+                  </div>
+                  <div class="pb-2">
+                    <label for="password" class="text-xs pl-3">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Enter Password"
+                      class="w-80 h-10 rounded-lg p-2.5 text-sm text-sm border border-gray-100 bg-gray-100 focus:border-gray-300 focus:ring-gray-300 active:ring-gray-300"
+                    />
+                  </div>
+                  <div class="flex justify-end pb-4">
+                    <p
+                      class="text-[#007AFF] text-xs hover:text-blue-900 hover:cursor-pointer"
+                    >
+                      Forgot password?
+                    </p>
+                  </div>
+                  <div class="pb-7 sm:pb-14">
+                    <button
+                      class="bg-[#8053FF] w-80 h-10 rounded-lg text-xs text-white hover:bg-purple-900"
+                    >
+                      Sign in
+                    </button>
+                  </div>
+                  <div class="pb-4">
+                    <button
+                      class="bg-black w-80 h-10 rounded-lg text-xs text-white hover:bg-gray-900 flex flex-row items-center justify-center gap-2"
+                    >
+                      <img src="/asset/logoGoogle.png" alt="logoGoogle" />
+                      or Sign in with Google
+                    </button>
+                  </div>
+                  <div class="text-center">
+                    <p
+                      class="text-black text-xs hover:cursor-pointer hover:text-gray-500"
+                    >
+                      Dont have an account?
+                      <span class="pl-2 text-[#8053FF] hover:text-purple-900"
+                        >Sign up now</span
+                      >
+                    </p>
+                  </div>
+                </form>
+                <div
+                  class="sm:hidden pb-7 flex justify-center items-center pt-7"
+                >
+                  <img
+                    src="/asset/logoPractice.png"
+                    alt="logoPractice"
+                    width="170"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="text-center sm:pt-20">
+              <p class="text-[#666666] text-xs">© Perfect Login 2021</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
