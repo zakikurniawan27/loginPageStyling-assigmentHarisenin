@@ -20,12 +20,12 @@
   <body>
     <main>
       <section class="container-lg">
-        <div class="flex flex-row rounded-lg">
+        <div class="flex flex-row rounded-lg gap-5">
           <div class="hidden sm:flex sm:h-[707px] sm:basis-11/12">
             <img
               src="/asset/backgroundLoginPage.png"
               alt="backgroundLoginPage"
-              width="900"
+              width="1000"
               class="rounded-l-xl"
             />
             <div class="absolute bottom-0 left-0 pl-2">
@@ -49,7 +49,9 @@
                 <form action="">
                   <h1 class="font-semibold text-lg">Nice to see you again</h1>
                   <div class="pb-2 pt-3">
-                    <label for="email" class="text-xs pl-3">Login</label>
+                    <label for="email" class="hidden sm:block text-xs pl-3"
+                      >Login</label
+                    >
                     <input
                       type="email"
                       name="email"
@@ -58,8 +60,10 @@
                       class="w-80 h-10 rounded-lg p-2.5 text-sm border border-gray-100 bg-gray-100 focus:border-gray-300 focus:ring-gray-300 active:ring-gray-300"
                     />
                   </div>
-                  <div class="pb-2">
-                    <label for="password" class="text-xs pl-3">Password</label>
+                  <div class="pb-2 pt-3 sm:pt-0">
+                    <label for="password" class="hidden sm:block text-xs pl-3"
+                      >Password</label
+                    >
                     <input
                       type="password"
                       name="password"
